@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header.jsx";
+import ScrumMethodology from "./components/ScrumMethodology.jsx";
 
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
         <div>
             <Header />
             <main role={"main"}>
+                <ScrumMethodology />
 
             </main>
         </div>

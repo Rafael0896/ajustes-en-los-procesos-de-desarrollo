@@ -1,22 +1,40 @@
-/* Reset y estilos base */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* VARIABLES */
 :root {
     --primary-color: #121511;
     --primary-dark: #141712;
     --secondary-color: #0056A4;
+
     --text-dark: #1a1a1a;
     --text-light: #555;
+
     --bg-light: #f8f9fa;
     --bg-white: #ffffff;
+
     --border-color: #dee2e6;
+
     --shadow: 0 2px 8px rgba(0,0,0,0.1);
     --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+
     --max-width: 1200px;
+
+    /* Nuevas variables para colores repetidos */
+    --title-color: #2c3e50;
+    --accent-color: #667eea;
+}
+
+/* BASE */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
 }
 
 .app {
@@ -25,18 +43,11 @@
     flex-direction: column;
 }
 
-.container {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #2c3e50;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-}
-
-/* Header */
+/* HEADER */
 .header {
-    background: linear-gradient(135deg, #2543ca 0%, #01100e 100%);
+    background: linear-gradient(135deg, #2144e1 0%, #02031c 100%);
     color: white;
-    padding: 60px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -47,15 +58,102 @@
 
 .header-title {
     font-size: 2.5em;
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
     font-weight: 700;
 }
 
 .header-subtitle {
     font-size: 1.2em;
-    margin: 0;
     opacity: 0.95;
     font-weight: 300;
 }
 
 
+
+/* RESPONSIVE HEADER */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2em;
+    }
+
+    .header-subtitle {
+        font-size: 1.1em;
+    }
+}
+
+/* SECTIONS */
+.section {
+    max-width: var(--max-width);
+    margin: 0 auto 50px auto;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 2em;
+    color: var(--title-color);
+    font-weight: 600;
+}
+
+/* CARDS */
+.card {
+    background-color: var(--bg-white);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+}
+
+.text,
+.list {
+    font-size: 1.05em;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+.list {
+    line-height: 1.8;
+    padding-left: 25px;
+}
+
+/* SUBSECCIONES */
+.subsection {
+    margin-top: 25px;
+}
+
+.subsection-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+/* JUSTIFICATION BOX */
+.justification {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+/* RESPONSIVE ELEMENTS */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.6em;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
