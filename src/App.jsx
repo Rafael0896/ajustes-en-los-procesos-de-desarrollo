@@ -1,10 +1,14 @@
 import React from "react";
+import Header from "./components/Header.jsx";
 
 
 export default function App() {
     return (
         <div>
-            <h1>Hola, Mundo!</h1>
+            <Header />
+            <main role={"main"}>
+
+            </main>
         </div>
     );
 }
