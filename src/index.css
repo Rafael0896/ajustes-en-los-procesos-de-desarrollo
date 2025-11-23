@@ -68,6 +68,104 @@ body {
     font-weight: 300;
 }
 
+/* ScrumMethodology */
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.section-icon {
+    font-size: 2em;
+}
+
+.section-title {
+    font-size: 2em;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 600;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+}
+
+.text {
+    font-size: 1.05em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.subsection {
+    margin-top: 25px;
+}
+
+.subsection-title {
+    font-size: 1.4em;
+    color: #667eea;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.list {
+    font-size: 1.05em;
+    color: #555;
+    line-height: 1.8;
+    padding-left: 25px;
+}
+
+.justification {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+.justification-box
+{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.6em;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+/* DevelopmentProcess */
+.ordered-list {
+    font-size: 1.05em;
+    color: #555;
+    line-height: 1.8;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+.problem-box {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #fdeebd;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
 
 
 /* RESPONSIVE HEADER */
@@ -84,7 +182,7 @@ body {
 /* SECTIONS */
 .section {
     max-width: var(--max-width);
-    margin: 0 auto 50px auto;
+    margin: 0 auto 1px auto;
     padding: 30px;
     border-radius: 16px;
 }
