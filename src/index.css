@@ -166,6 +166,47 @@ body {
     border-radius: 8px;
     border-left: 4px solid #667eea;
 }
+/* ChangeCard */
+.grid-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: default;
+}
+
+.grid-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    font-size: 1.3em;
+    color: #667eea;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* OperationalChanges */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /* RESPONSIVE HEADER */
