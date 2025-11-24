@@ -5,6 +5,7 @@ import DevelopmentProcess from "./components/DevelopmentProcess.jsx";
 import OperationalChanges from "./components/OperationalChanges.jsx";
 import TechnicalChanges from "./components/TechnicalChanges.jsx";
 import QualityPractices from "./components/QualityPractices.jsx";
+import ChangeDocumentation from "./components/ChangeDocumentation.jsx";
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
                 <OperationalChanges />
                 <TechnicalChanges />
                 <QualityPractices/>
+                <ChangeDocumentation />
             </main>
         </div>
     );

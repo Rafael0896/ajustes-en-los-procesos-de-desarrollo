@@ -224,7 +224,7 @@ body {
     font-weight: bold;
 }
 
-/* DocSection */
+/* QualityPractices */
 .practices-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -232,8 +232,19 @@ body {
     margin-top: 25px;
 }
 
+/* DocSection */
+.doc-section {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e9ecef;
+}
 
-
+.doc-title {
+    font-size: 1.4em;
+    color: #667eea;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
 
 
 
