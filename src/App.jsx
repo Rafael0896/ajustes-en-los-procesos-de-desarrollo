@@ -6,6 +6,7 @@ import OperationalChanges from "./components/OperationalChanges.jsx";
 import TechnicalChanges from "./components/TechnicalChanges.jsx";
 import QualityPractices from "./components/QualityPractices.jsx";
 import ChangeDocumentation from "./components/ChangeDocumentation.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function App() {
     return (
@@ -19,6 +20,7 @@ export default function App() {
                 <QualityPractices/>
                 <ChangeDocumentation />
             </main>
+            <Footer />
         </div>
     );
 }
