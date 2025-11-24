@@ -4,6 +4,7 @@ import ScrumMethodology from "./components/ScrumMethodology.jsx";
 import DevelopmentProcess from "./components/DevelopmentProcess.jsx";
 import OperationalChanges from "./components/OperationalChanges.jsx";
 import TechnicalChanges from "./components/TechnicalChanges.jsx";
+import QualityPractices from "./components/QualityPractices.jsx";
 
 export default function App() {
     return (
@@ -14,6 +15,7 @@ export default function App() {
                 <DevelopmentProcess />
                 <OperationalChanges />
                 <TechnicalChanges />
+                <QualityPractices/>
             </main>
         </div>
     );

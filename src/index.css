@@ -208,6 +208,35 @@ body {
     }
 }
 
+/* PracticeItem */
+.practice-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.checkmark {
+    font-size: 1.5em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* DocSection */
+.practices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
 
 /* RESPONSIVE HEADER */
 @media (max-width: 768px) {
